@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from django.http import HttpResponse
 def learn_django(request):
-    return HttpResponse("<h1>Hello Django</h1>")
+    return render(request,'courseone.html')
 def learn_python(request):
-    return HttpResponse("<h1>Hello Python</h1>")
+    return render(request,'coursetwo.html')

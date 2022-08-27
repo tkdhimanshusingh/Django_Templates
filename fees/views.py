@@ -1,7 +1,6 @@
 from django.shortcuts import render
 # Create your views here.
-from django.http import HttpResponse
 def fees_django(request):
-    return HttpResponse("<h1>500</h1>")
+    return render(request,'feesone.html')
 def fees_python(request):
-    return HttpResponse("<h1>200</h1>")
+    return render(request,'feestwo.html')
